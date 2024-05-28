@@ -1,14 +1,63 @@
+import { Callout } from "nextra/components";
+import { Tabs } from "nextra/components";
+
 # Demo
 
+# 見出し - Headers
+
+# This is an H1
+
+## This is an H2
+
+### This is an H3
+
+# 引用 - Blockquotes
+
 > 引用引用引用引用
+> 引用引用
+> 引用本文引用本文
+>
+> > 入れ子
+
+# リスト - Lists
 
 - リスト 1
   - リスト 1-2
 - リスト 2
 
-- `src/pages/index.js` → `localhost:3000/`
-- `src/pages/foo.md` → `localhost:3000/foo`
-- `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
+1. リスト 1
+1. リスト 1-1
+1. リスト 1-2
+1. リスト 2
+
+- [ ] リスト 1
+- [x] リスト 2
+
+# 水平線 - Horizontal Rules
+
+---
+
+# リンク - Links
+
+[Qiita](http://qiita.com)
+[Qiita](http://qiita.com "Qiita")
+
+# 強調 - Emphasis
+
+**強調**
+
+# 画像 - images
+
+![Docusaurus logo](/next.svg)
+
+# コード表示
+
+`$hoge = 1`
+`.md`
+
+```
+yarn add hogehoge
+```
 
 ```html copy filename="example.html"
 <div class="radioWave">
@@ -16,6 +65,24 @@
   <p>嘘みたいに晴れた朝に繋がることを教えてくれた</p>
 </div>
 ```
+
+```js copy filename="docusaurus.config.js"
+export default {
+  themeConfig: {
+    navbar: {
+      items: [
+        // highlight-start
+        {
+          type: "docsVersionDropdown",
+        },
+        // highlight-end
+      ],
+    },
+  },
+};
+```
+
+# テーブル記法
 
 | Left align | Right align | Center align |
 | :--------- | ----------: | :----------: |
@@ -25,3 +92,21 @@
 | be         |          be |      be      |
 | left       |       right |    center    |
 | aligned    |     aligned |   aligned    |
+
+# 独自
+
+<Callout emoji="👾">
+  **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
+  Nishikado.
+</Callout>
+<Callout type="error" emoji="️🚫">
+  This is a dangerous feature that can cause everything to explode.
+</Callout>
+
+<Tabs items={["pnpm", "npm", "yarn"]}>
+  <Tabs.Tab>**pnpm**: Fast, disk space efficient package manager.</Tabs.Tab>
+  <Tabs.Tab>
+    **npm** is a package manager for the JavaScript programming language.
+  </Tabs.Tab>
+  <Tabs.Tab>**Yarn** is a software packaging system.</Tabs.Tab>
+</Tabs>
