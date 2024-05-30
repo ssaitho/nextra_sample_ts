@@ -4,4 +4,8 @@ export default {
     link: "https://github.com/shuding/nextra",
   },
   // ... other theme options
+
+  // カラーの変更
+  primaryHue: 360,
+  primarySaturation: 100,
 };
