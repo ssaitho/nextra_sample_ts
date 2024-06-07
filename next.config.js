@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export",
   images: { unoptimized: true },
-  basePath: '/nextra_sample_ts',
+  basePath: "/nextra_sample_ts",
 };
 
 const withNextra = require("nextra")({
