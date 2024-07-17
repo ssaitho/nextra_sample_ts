@@ -1,3 +1,13 @@
-.nextra-nav-container {
-  background-color: bisque;
+.header {
+  display: flex;
+}
+.header img {
+  width: 120px;
+}
+
+.footer {
+  display: flex;
+}
+.footer img {
+  width: 120px;
 }

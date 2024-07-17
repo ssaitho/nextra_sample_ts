@@ -3,9 +3,26 @@ export default {
   project: {
     link: "https://github.com/shuding/nextra",
   },
-  // ... other theme options
-
-  // カラーの変更
-  primaryHue: 360,
-  primarySaturation: 100,
+  logo: (
+    <div className="header">
+      <img src="next.svg" />
+      <span style={{ marginLeft: ".4em", fontWeight: 800 }}>
+        My Cool Project
+      </span>
+    </div>
+  ),
+  footer: {
+    text: (
+      <div className="footer">
+        <img src="next.svg" />
+        <p className="nx-text-xs">
+          コンフィグファイルの設定を変更することで、フッターのテキストを変更できます。
+        </p>
+        <p>
+          コンフィグファイルの設定を変更することで、フッターのテキストを変更できます。
+        </p>
+        <a href="#">りんくですyo</a>
+      </div>
+    ),
+  },
 };
