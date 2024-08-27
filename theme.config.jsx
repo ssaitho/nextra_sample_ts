@@ -5,7 +5,6 @@ export default {
   },
   logo: (
     <div className="header">
-      <img src="next.svg" />
       <span style={{ marginLeft: ".4em", fontWeight: 800 }}>
         My Cool Project
       </span>
