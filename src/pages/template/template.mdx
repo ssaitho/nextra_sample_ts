@@ -1,99 +1,94 @@
-import { Callout } from "nextra/components";
+import { Callout } from 'nextra/components'
 
-# タイトル
+<Callout type="info" title="必須でタイトルが入ります">
+  ダミーテキストです。ダミーテキストです。ダミーテキストです。 `XXX` ダミーテキストです。
+  ダミーテキストです。ダミーテキストです。[テキストリンクが入ります。](https://www.google.com/)
+</Callout>
 
-# 見出し - Headers
+<Callout type="warning" title="必須でタイトルが入ります">
+  ダミーテキストです。ダミーテキストです。ダミーテキストです。 `XXX` ダミーテキストです。
+  ダミーテキストです。ダミーテキストです。[テキストリンクが入ります。](https://www.google.com/)
+</Callout>
 
-# This is an H1
+<Callout type="error" title="必須でタイトルが入ります">
+  ダミーテキストです。ダミーテキストです。ダミーテキストです。 `XXX` ダミーテキストです。
+  ダミーテキストです。ダミーテキストです。[テキストリンクが入ります。](https://www.google.com/)
+</Callout>
 
-## This is an H2
+# h1：ページタイトルが入ります
 
-### This is an H3
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。`XXX` 本文テキストが入ります。
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。
+[テキストリンクが入ります。](https://www.google.com/)本文テキストが入ります。**本文テキストが入ります。**_本文テキストが入ります。_
 
-# 引用 - Blockquotes
+- `XXX` 箇条書きリスト[テキストリンク](https://www.google.com/)
+- `XXX` 箇条書きリスト[テキストリンク](https://www.google.com/)
+- `XXX` 箇条書きリスト[テキストリンク](https://www.google.com/)
+  - `XXX` 箇条書きリスト[テキストリンク](https://www.google.com/)
+  - `XXX` 箇条書きリスト[テキストリンク](https://www.google.com/)
+  - `XXX` 箇条書きリスト[テキストリンク](https://www.google.com/)
 
-> 引用引用引用引用
-> 引用引用
-> 引用本文引用本文
->
-> > 入れ子
-
-# リスト - Lists
-
-- リスト 1
-  - リスト 1-2
-- リスト 2
-
-1. リスト 1
-1. リスト 1-1
-1. リスト 1-2
-1. リスト 2
-
-- [ ] リスト 1
-- [x] リスト 2
-
-# 水平線 - Horizontal Rules
+1. `XXX` 箇条書きリスト[テキストリンク](https://www.google.com/)
+2. `XXX` 箇条書きリスト[テキストリンク](https://www.google.com/)
+3. `XXX` 箇条書きリスト[テキストリンク](https://www.google.com/)
 
 ---
 
-# リンク - Links
+## h2：コンテンツ名が入ります
 
-[Qiita](http://qiita.com)
-[Qiita](http://qiita.com "Qiita")
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。`XXX` 本文テキストが入ります。
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。
+[テキストリンクが入ります。](https://www.google.com/)本文テキストが入ります。**本文テキストが入ります。**_本文テキストが入ります。_
 
-# 強調 - Emphasis
-
-**強調**
-
-# コード表示
-
-`$hoge = 1`
-`.md`
-
-```
-yarn add hogehoge
-```
-
-```html copy filename="example.html"
-<div class="radioWave">
-  <p>迷いの中あてなく見上げた空彩る星たちが</p>
-  <p>嘘みたいに晴れた朝に繋がることを教えてくれた</p>
-</div>
+```bash {1,4-5} filename="filename" copy
+jobModuleType: s3
+name: cli-test2
+content:
+  jobModuleType: s3
+  executorInstance: 10
+  executorMemory: 4g
+  tableName: table3
+  target:
+    bucket: test5
+    path: s3://hoge
+    recursive: true
 ```
 
-```js copy filename="docusaurus.config.js"
-export default {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: "docsVersionDropdown",
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
+### h3：小コンテンツ名が入ります
 
-# テーブル記法
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。`XXX` 本文テキストが入ります。
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。
+[テキストリンクが入ります。](https://www.google.com/)本文テキストが入ります。**本文テキストが入ります。**_本文テキストが入ります。_
 
-| Left align | Right align | Center align |
-| :--------- | ----------: | :----------: |
-| This       |        This |     This     |
-| column     |      column |    column    |
-| will       |        will |     will     |
-| be         |          be |      be      |
-| left       |       right |    center    |
-| aligned    |     aligned |   aligned    |
+<small>補足テキストが入ります。補足テキストが入ります。補足テキストが入ります。補足テキストが入ります。補足テキストが入ります。補足テキストが入ります。[テキストリンクが入ります。](https://www.google.com/)</small>
 
-# 独自
+|  項目名  |  項目名  |  項目名  |  項目名  |  項目名  |
+| ------- | ------- | ------- | ------- | ------- |
+| example | `XXX` | [example](https://www.google.com/) | example | example |
+| example | example | example | example | example |
+| example | example | example | example | example |
+| example | example | example | example | example |
 
-<Callout title="タイトル">
-  **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
-  Nishikado.
-</Callout>
-<Callout type="error" title="タイトル">
-  This is a dangerous feature that can cause everything to explode.
-</Callout>
+#### h4：項目名が入ります
+
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。`XXX` 本文テキストが入ります。
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。
+[テキストリンクが入ります。](https://www.google.com/)本文テキストが入ります。**本文テキストが入ります。**_本文テキストが入ります。_
+
+> 本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。`XXX` 本文テキストが入ります。
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。
+[テキストリンクが入ります。](https://www.google.com/)本文テキストが入ります。本文テキストが入ります。  
+_参照：XXX XXXXXXXXX_
+
+|  項目名  |  項目名  |  項目名  |  項目名  |  項目名  |
+| ------- | ------- | ------- | ------- | ------- |
+| example | `XXX` | [example](https://www.google.com/) | example | example |
+| example | example | example | example | example |
+| example | example | example | example | example |
+| example | example | example | example | example |
+
+##### h5：項目名が入ります
+
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。`XXX` 本文テキストが入ります。
+本文テキストが入ります。本文テキストが入ります。本文テキストが入ります。
+[テキストリンクが入ります。](https://www.google.com/)本文テキストが入ります。**本文テキストが入ります。**_本文テキストが入ります。_
