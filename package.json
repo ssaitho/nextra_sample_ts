@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@super_studio/ecforce-nextra": "^0.1.5",
-    "@super_studio/ecforce-nextra-theme-docs": "^0.1.5",
+    "@ssaitho/nextra-theme-docs": "^0.0.6",
     "next": "^14.2.4",
+    "nextra": "^2.13.4",
     "react": "^18",
     "react-dom": "^18"
   },

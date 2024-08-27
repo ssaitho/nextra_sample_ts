@@ -9,8 +9,8 @@ const nextConfig = {
   basePath: isProd ? "/nextra_sample_ts" : "",
 };
 
-const withNextra = require('@super_studio/ecforce-nextra')({
-  theme: '@super_studio/ecforce-nextra-theme-docs',
+const withNextra = require('nextra')({
+  theme: '@ssaitho/nextra-theme-docs',
   themeConfig: './theme.config.jsx',
 });
 
