@@ -1,5 +1,4 @@
 import { Callout } from "nextra/components";
-import { Tabs } from "nextra/components";
 
 # タイトル
 
@@ -46,10 +45,6 @@ import { Tabs } from "nextra/components";
 
 **強調**
 
-# 画像 - images
-
-![Docusaurus logo](/next.svg)
-
 # コード表示
 
 `$hoge = 1`
@@ -95,18 +90,10 @@ export default {
 
 # 独自
 
-<Callout emoji="👾">
+<Callout title="タイトル">
   **Space Invaders** is a 1978 shoot 'em up arcade game developed by Tomohiro
   Nishikado.
 </Callout>
-<Callout type="error" emoji="️🚫">
+<Callout type="error" title="タイトル">
   This is a dangerous feature that can cause everything to explode.
 </Callout>
-
-<Tabs items={["pnpm", "npm", "yarn"]}>
-  <Tabs.Tab>**pnpm**: Fast, disk space efficient package manager.</Tabs.Tab>
-  <Tabs.Tab>
-    **npm** is a package manager for the JavaScript programming language.
-  </Tabs.Tab>
-  <Tabs.Tab>**Yarn** is a software packaging system.</Tabs.Tab>
-</Tabs>

@@ -13,7 +13,6 @@ export default {
   footer: {
     text: (
       <div className="footer">
-        <img src="next.svg" />
         <p className="nx-text-xs">
           コンフィグファイルの設定を変更することで、フッターのテキストを変更できます。
         </p>
