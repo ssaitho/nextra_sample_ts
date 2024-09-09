@@ -1,6 +1,7 @@
 ---
 title: "Front Matterタイトルテスト"
 description: "NextraでFront Matterを使用してページのメタデータを管理する方法"
+tags: ["tag1", "tag2"]
 ---
 
 # ページ1です
