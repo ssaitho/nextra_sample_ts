@@ -1,6 +1,6 @@
 ---
-title: "動的タイトル置き換わってる?"
-description: "動的テキスト置き換わってる？"
+title: "page02タイトルテスト"
+description: "page02ディスクリプションテスト"
 tags: ["Nextra", "SEO", "タグ", "ドキュメント"]
 ---
 

@@ -17,11 +17,11 @@ export default {
     return (
       <>
         {/* <meta property="og:url" content={url} /> */}
-        <meta property="og:title" content={frontMatter.title || 'デフォルトタイトルテスト！！！'} />
+        {/* <meta property="og:title" content={frontMatter.title || 'デフォルトタイトルテスト！！！'} />
         <meta
           property="og:description"
           content={frontMatter.description || 'デフォルトディスクリプションテスト！！！'}
-        />
+        /> */}
         <meta name="keywords" content={keywords} />
       </>
     )
