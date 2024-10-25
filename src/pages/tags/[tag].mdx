@@ -1,0 +1,52 @@
+import { getAllPosts } from '../../lib/getAllPosts';
+
+export default function TagPage({ posts, tag }) {
+  return (
+    <div>
+      <h1>Posts tagged with "{tag}"</h1>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.slug}>
+            <a href={`/${post.slug.replace(/^\/+/, '')}`}>
+              <p>{post.title}</p>
+              <p>{post.description}</p>
+            </a> {/* スラッシュの重複を防ぐ */}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export async function getStaticPaths() {
+  const posts = getAllPosts();
+
+  // タグ一覧を取得
+  const tags = Array.from(new Set(posts.flatMap((post) => post.tags || [])));
+
+  // パスを生成
+  const paths = tags.map((tag) => ({
+    params: { tag },
+  }));
+
+  return { paths, fallback: false }; // fallback: false で静的エクスポートをサポート
+}
+
+export async function getStaticProps({ params }) {
+  const posts = getAllPosts().filter((post) => {
+    return Array.isArray(post.tags) && post.tags.includes(params.tag);
+  });
+
+  if (posts.length === 0) {
+    return {
+      notFound: true, // タグに関連する記事がない場合は404を返す
+    };
+  }
+
+  return {
+    props: {
+      posts,
+      tag: params.tag,
+    },
+  };
+}
